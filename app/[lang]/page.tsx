@@ -1,3 +1,4 @@
+// app/[lang]/page.tsx
 import { getTranslations } from "../../lib/i18n";
 import Link from "next/link";
 import Image from "next/image";
@@ -65,11 +66,14 @@ const projects = [
   },
 ];
 
-export default async function PortfolioPage({
-  params,
-}: {
-  params: { lang: string };
-}) {
+// Define the correct types for Next.js 15
+interface PageProps {
+  params: Promise<{ lang: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function PortfolioPage({ params }: PageProps) {
+  // Await the params Promise
   const { lang } = await params;
   const t = await getTranslations(lang);
   type Lang = "en" | "de" | "bs";
