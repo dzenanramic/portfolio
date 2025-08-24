@@ -1,58 +1,86 @@
 const projects = [
   {
-    title: "Islamic Community",
+    title: "Islamska zajednica",
     url: "https://medzlis-bl.vercel.app/",
-    desc: "Website for the Islamic community in Banja Luka",
+    desc: "Web stranica za Islamsku zajednicu u Banjoj Luci",
   },
   {
     title: "Musafir BL",
     url: "https://halal-bl.vercel.app/?page=home",
-    desc: "Guide for travelers to find halal food in Banja Luka",
+    desc: "Vodič za putnike za pronalazak hrane pogodne za muslimane u Banjoj Luci",
   },
   {
-    title: "Arijana Hairstylist",
+    title: "Arijana Frizerski salon",
     url: "https://frizerski-salon-arijana.org/",
-    desc: "Website for a local hairstylist",
+    desc: "Web stranica za lokalni frizerski salon",
   },
   {
-    title: "Seam Grill",
-    url: "https://seam-grill.vercel.app/",
-    desc: "Restaurant website for Seam Grill",
+    title: "Pite pod sačem",
+    url: "https://pite-pod-sacem.vercel.app/",
+    desc: "Web stranica buregdžinice",
   },
   {
-    title: "Handyman",
+    title: "Majstor",
     url: "https://handyman-seven-xi.vercel.app/",
-    desc: "Website for a handyman service",
+    desc: "Web stranica za usluge majstora",
   },
   {
     title: "Dea Steel",
     url: "https://dea-steel.vercel.app/",
-    desc: "Company website for steel works",
+    desc: "Web stranica firme za čelične konstrukcije",
   },
 ];
 
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-gray-900 text-white p-6">
+    <main className="min-h-screen bg-[#f4ecd8] text-gray-900 p-8 font-mono">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-center">My Projects</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center tracking-wide border-b-4 border-gray-800 pb-4">
+          Moji Projekti
+        </h1>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <div key={project.url} className="bg-gray-800 p-6 rounded-lg">
-              <h2 className="text-xl font-semibold mb-3">{project.title}</h2>
-              <p className="text-gray-300 mb-4">{project.desc}</p>
+            <div
+              key={project.url}
+              className="bg-[#fffdf5] p-6 rounded-lg border-2 border-gray-800 shadow-[3px_3px_0px_#000] hover:shadow-[5px_5px_0px_#000] transition-shadow"
+            >
+              <h2 className="text-2xl font-bold mb-3">{project.title}</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                {project.desc}
+              </p>
               <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors"
+                className="underline underline-offset-4 decoration-gray-800 hover:decoration-dotted font-semibold"
               >
-                Visit Site
+                Posjeti stranicu →
               </a>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Kontakt sekcija */}
+      <div className="max-w-4xl mx-auto mt-16 text-center border-t-2 border-gray-800 pt-8">
+        <h2 className="text-2xl font-bold mb-4">Kontakt</h2>
+        <p className="mb-2">
+          <a
+            href="tel:+38766129230"
+            className="text-blue-700 underline underline-offset-4 hover:text-blue-900"
+          >
+            📞 +387 66 129 230
+          </a>
+        </p>
+        <p>
+          <a
+            href="mailto:dzenan.ramic1210@gmail.com"
+            className="text-blue-700 underline underline-offset-4 hover:text-blue-900"
+          >
+            ✉️ dzenan.ramic1210@gmail.com
+          </a>
+        </p>
       </div>
     </main>
   );
