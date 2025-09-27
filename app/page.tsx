@@ -45,6 +45,11 @@ const projects = [
     url: "https://kako-klanjati.vercel.app/",
     desc: "Aplikacija za one koji žele naučiti klanjati",
   },
+  {
+    title: "Vaktovrijeme",
+    url: "https://vaktovrijeme.vercel.app/",
+    desc: "Aplikacija s namaskim vremenima i vremenskom prognozom za navedenu lokaciju",
+  },
 ];
 
 export default function PortfolioPage() {
