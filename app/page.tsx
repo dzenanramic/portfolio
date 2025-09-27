@@ -51,9 +51,12 @@ export default function PortfolioPage() {
   return (
     <main className="min-h-screen bg-[#f4ecd8] text-gray-900 p-8 font-mono">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-10 text-center tracking-wide border-b-4 border-gray-800 pb-4">
-          Moji Projekti
+        <h1 className="text-4xl font-bold mb-2 text-center tracking-wide border-b-4 border-gray-800 pb-4">
+          Portfolio – Dženan Ramić
         </h1>
+        <p className="text-lg text-center text-gray-700 mb-10">
+          Web aplikacije, moderne stranice i kreativna rješenja.
+        </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
