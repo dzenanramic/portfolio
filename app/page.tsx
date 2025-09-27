@@ -1,5 +1,10 @@
 const projects = [
   {
+    title: "My wardrobe",
+    url: "https://my-wardrobe1.vercel.app/",
+    desc: "Aplikacija za garderobu koja omogućava korisnicima da učitaju svoju odjeću, uklone pozadinu i digitalno kombinuju outfite.",
+  },
+  {
     title: "Islamska zajednica",
     url: "https://medzlis-bl.vercel.app/",
     desc: "Web stranica za Islamsku zajednicu u Banjoj Luci",
@@ -9,11 +14,7 @@ const projects = [
     url: "https://halal-bl.vercel.app/?page=home",
     desc: "Vodič za putnike za pronalazak hrane pogodne za muslimane u Banjoj Luci",
   },
-  {
-    title: "Arijana Frizerski salon",
-    url: "https://frizerski-salon-arijana.org/",
-    desc: "Web stranica za lokalni frizerski salon",
-  },
+
   {
     title: "Pite pod sačem",
     url: "https://pite-pod-sacem.vercel.app/",
@@ -28,6 +29,21 @@ const projects = [
     title: "Dea Steel",
     url: "https://dea-steel.vercel.app/",
     desc: "Web stranica firme za čelične konstrukcije",
+  },
+  {
+    title: "Connect four",
+    url: "https://connect-four-jet.vercel.app/",
+    desc: "Popularna igrica",
+  },
+  {
+    title: "Arijana Frizerski salon",
+    url: "https://frizerski-salon-arijana.org/",
+    desc: "Web stranica za lokalni frizerski salon",
+  },
+  {
+    title: "Kako klanjati",
+    url: "https://kako-klanjati.vercel.app/",
+    desc: "Aplikacija za one koji žele naučiti klanjati",
   },
 ];
 
