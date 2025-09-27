@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Musafir BL",
-    url: "https://halal-bl.vercel.app/?page=home",
+    url: "https://musafir-bl.vercel.app/?page=home",
     desc: "Vodič za putnike za pronalazak hrane pogodne za muslimane u Banjoj Luci",
   },
 
