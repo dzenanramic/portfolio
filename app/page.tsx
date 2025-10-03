@@ -67,20 +67,22 @@ export default function PortfolioPage() {
           {projects.map((project) => (
             <div
               key={project.url}
-              className="bg-[#fffdf5] p-6 rounded-lg border-2 border-gray-800 shadow-[3px_3px_0px_#000] hover:shadow-[5px_5px_0px_#000] transition-shadow"
+              className="bg-[#fffdf5] p-6 rounded-lg border-2 border-gray-800 shadow-[3px_3px_0px_#000] hover:shadow-[5px_5px_0px_#000] transition-shadow flex flex-col"
             >
               <h2 className="text-2xl font-bold mb-3">{project.title}</h2>
-              <p className="text-gray-700 mb-4 leading-relaxed">
+              <p className="text-gray-700 mb-4 leading-relaxed flex-grow">
                 {project.desc}
               </p>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 decoration-gray-800 hover:decoration-dotted font-semibold"
-              >
-                Posjeti stranicu →
-              </a>
+              <div className="border-t-2 border-gray-800 pt-4 mt-auto">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold"
+                >
+                  Posjeti stranicu →
+                </a>
+              </div>
             </div>
           ))}
         </div>
